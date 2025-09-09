@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
   // Redirect apex to www
   const host = req.headers.host?.toLowerCase();
-  if (host && host.startsWith("brixbuilds.com")) {
+  if (host && host.startsWith("legalweeddoc.com")) {
     return res.redirect(
       301,
       `https://${CANONICAL_HOST}${req.originalUrl}`
