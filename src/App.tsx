@@ -1,6 +1,6 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./components/ChosenTitle"
+import Home from "./components/LegalWeedDoc"
 import ScrollToTop from "./components/common/ScrollToTop"
 
 const App = () => {

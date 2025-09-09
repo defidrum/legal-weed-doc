@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const CANONICAL_HOST = "www.chosentitle.com";
+const CANONICAL_HOST = "www.legalweeddoc.com";
 
 // Heroku sits behind a proxy. This lets req.secure work with x-forwarded-proto.
 app.enable("trust proxy");
