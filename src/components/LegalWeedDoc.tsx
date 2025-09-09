@@ -357,60 +357,64 @@ const LegalWeedDocWebsite = () => {
       </section>
 
       {/* Conditions Section */}
-      <section id="conditions" className="py-24 bg-gradient-to-br from-green-50 to-white">
+      <section id="conditions" className="py-16 md:py-24 bg-gradient-to-br from-green-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-6 leading-tight md:leading-snug">
+          <div className="text-center mb-12 md:mb-20">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-4 md:mb-6 leading-tight">
               Qualifying Medical Conditions
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-2">
               Evidence-based medical cannabis treatment for a wide range of conditions. 
               Personalized care plans tailored to your specific medical needs.
             </p>
           </div>
 
-          {/* Condition Selector */}
-          <div className="flex justify-center mb-12">
-            <div className="bg-white rounded-full shadow-lg p-2 flex gap-2 flex-wrap">
-              {Object.keys(conditionTreatments).map((condition) => (
-                <button
-                  key={condition}
-                  onClick={() => setSelectedCondition(condition)}
-                  className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
-                    selectedCondition === condition
-                      ? 'bg-gradient-to-r from-green-600 to-green-700 text-white'
-                      : 'text-gray-600 hover:bg-gray-100'
-                  }`}
-                >
-                  {conditionTreatments[condition].title}
-                </button>
-              ))}
+          {/* Condition Selector - Mobile Friendly */}
+          <div className="flex justify-center mb-8 md:mb-12 px-2">
+            <div className="bg-white rounded-2xl md:rounded-full shadow-lg p-2 w-full max-w-4xl">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-2">
+                {Object.keys(conditionTreatments).map((condition) => (
+                  <button
+                    key={condition}
+                    onClick={() => setSelectedCondition(condition)}
+                    className={`px-4 sm:px-6 py-3 rounded-xl sm:rounded-full font-semibold transition-all duration-300 text-sm sm:text-base flex-1 ${
+                      selectedCondition === condition
+                        ? 'bg-gradient-to-r from-green-600 to-green-700 text-white'
+                        : 'text-gray-600 hover:bg-gray-100'
+                    }`}
+                  >
+                    {conditionTreatments[condition].title}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* Treatment Benefits */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {/* Treatment Benefits - Mobile Optimized Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12 md:mb-16">
             {conditionTreatments[selectedCondition].benefits.map((benefit: any, index: any) => (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-green-100 ${
+                className={`bg-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 md:hover:-translate-y-2 border border-green-100 ${
                   visibleSections.has('conditions') ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center text-white mb-4">
-                  <CheckCircle className="w-6 h-6" />
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center text-white mb-3 md:mb-4">
+                  <CheckCircle className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.desc}</p>
+                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">{benefit.title}</h3>
+                <p className="text-sm md:text-base text-gray-600 leading-relaxed">{benefit.desc}</p>
               </div>
             ))}
           </div>
 
-          {/* Additional Qualifying Conditions */}
-          <div className="bg-white rounded-3xl p-8 shadow-lg border border-green-100">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Other Qualifying Conditions</h3>
-            <div className="grid md:grid-cols-3 gap-6">
+          {/* Additional Qualifying Conditions - Mobile Responsive */}
+          <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-lg border border-green-100">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+              Other Qualifying Conditions
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {[
                 ['Epilepsy & Seizures', 'Glaucoma', 'HIV/AIDS', 'Multiple Sclerosis'],
                 ['Crohn\'s Disease', 'Parkinson\'s Disease', 'Alzheimer\'s', 'ALS'],
@@ -419,8 +423,8 @@ const LegalWeedDocWebsite = () => {
                 <div key={colIndex} className="space-y-3">
                   {column.map((condition, index) => (
                     <div key={index} className="flex items-center gap-3">
-                      <Leaf className="w-4 h-4 text-green-600" />
-                      <span className="text-gray-700">{condition}</span>
+                      <Leaf className="w-4 h-4 text-green-600 flex-shrink-0" />
+                      <span className="text-sm md:text-base text-gray-700">{condition}</span>
                     </div>
                   ))}
                 </div>
