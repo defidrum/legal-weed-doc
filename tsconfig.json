@@ -14,5 +14,5 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", "vitest.config.ts", "types/**/*.d.ts", "src/index.tsx"]
+  "include": ["src", "vitest.config.ts", "types/**/*.d.ts", "src/index.tsx", "generateFavicon.cjs"]
 }
