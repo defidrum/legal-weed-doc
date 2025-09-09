@@ -342,7 +342,7 @@ const LegalWeedDocWebsite = () => {
               {[
                 { label: '2000+', sublabel: 'Patients Helped', icon: <Users className="w-6 h-6" /> },
                 { label: '97%', sublabel: 'Approval Rate', icon: <CheckCircle className="w-6 h-6" /> },
-                { label: '24hr', sublabel: 'Certification', icon: <Clock className="w-6 h-6" /> },
+                { label: 'Same-Day', sublabel: 'Consultation Review', icon: <Clock className="w-6 h-6" /> },
                 { label: '4.9★', sublabel: 'Patient Rating', icon: <Star className="w-6 h-6" /> }
               ].map((stat, index) => (
                 <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-green-100">
