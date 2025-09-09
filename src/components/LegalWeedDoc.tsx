@@ -338,7 +338,7 @@ const LegalWeedDocWebsite = () => {
             </div>
 
             {/* Trust indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {[
                 { label: '2000+', sublabel: 'Patients Helped', icon: <Users className="w-6 h-6" /> },
                 { label: '97%', sublabel: 'Approval Rate', icon: <CheckCircle className="w-6 h-6" /> },
