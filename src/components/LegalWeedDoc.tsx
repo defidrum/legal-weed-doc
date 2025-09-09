@@ -275,19 +275,6 @@ const LegalWeedDocWebsite = () => {
             <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
             <div className="absolute top-40 left-1/2 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
           </div>
-          
-          {/* Subtle leaf pattern */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-1/4 left-1/4 transform rotate-12">
-              <Leaf className="w-24 h-24 text-green-600" />
-            </div>
-            <div className="absolute top-1/3 right-1/3 transform -rotate-45">
-              <Leaf className="w-32 h-32 text-green-600" />
-            </div>
-            <div className="absolute bottom-1/4 left-1/3 transform rotate-45">
-              <Leaf className="w-20 h-20 text-green-600" />
-            </div>
-          </div>
         </div>
 
         {/* Hero Content */}
