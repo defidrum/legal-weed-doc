@@ -1,0 +1,67 @@
+{
+  "name": "brix-builds-ui",
+  "version": "1.0.0",
+  "description": "Brix Builds - Real Estate Development",
+  "main": "index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "heroku-postbuild": "npm run build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@formspree/react": "^3.0.0",
+    "@mui/icons-material": "^7.3.1",
+    "@mui/material": "^7.3.1",
+    "@reduxjs/toolkit": "^2.5.1",
+    "@stripe/stripe-js": "^7.9.0",
+    "@tailwindcss/vite": "^4.1.6",
+    "@testing-library/react": "^16.2.0",
+    "express": "^4.21.2",
+    "lucide-react": "^0.542.0",
+    "msw": "^2.7.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.0.0",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.1.5",
+    "vite": "^6.1.0",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.5",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.21",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.4"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "real-estate"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

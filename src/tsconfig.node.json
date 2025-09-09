@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["ES2019", "dom"],
+    "module": "commonjs",
+    "target": "ES2019",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "types": ["@testing-library/jest-dom"]
+  },
+  "include": ["src", "../src/**/*.(ts|tsx)", "./**/*.(ts|tsx)", "./@types/"]
+}
