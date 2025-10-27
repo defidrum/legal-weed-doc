@@ -76,39 +76,39 @@ const LegalWeedDocWebsite = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-green-700 rounded-full flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-green-600 to-green-700 rounded-full flex items-center justify-center">
+                <Leaf className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold text-gray-900">
+              <span className="text-lg sm:text-2xl font-bold text-gray-900">
                 Legal<span className="text-green-600">Weed</span>Doc.com
               </span>
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-8">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-green-600 transition-colors">
+            <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
+              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-green-600 transition-colors whitespace-nowrap">
                 Home
               </button>
-              <button onClick={() => scrollToSection('how-it-works')} className="text-gray-700 hover:text-green-600 transition-colors">
+              <button onClick={() => scrollToSection('how-it-works')} className="text-gray-700 hover:text-green-600 transition-colors whitespace-nowrap">
                 How It Works
               </button>
-              <button onClick={() => scrollToSection('faq')} className="text-gray-700 hover:text-green-600 transition-colors">
+              <button onClick={() => scrollToSection('faq')} className="text-gray-700 hover:text-green-600 transition-colors whitespace-nowrap">
                 FAQ
               </button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-green-600 transition-colors">
+              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-green-600 transition-colors whitespace-nowrap">
                 Contact
               </button>
               <a 
                 href="tel:225-387-7858" 
-                className="flex items-center gap-2 text-green-600 font-semibold hover:text-green-700 transition-colors"
+                className="flex items-center gap-2 text-green-600 font-semibold hover:text-green-700 transition-colors whitespace-nowrap"
               >
                 <Phone className="w-5 h-5" />
-                <span className="text-lg">225-387-7858</span>
+                <span className="text-base xl:text-lg">225-387-7858</span>
               </a>
               <button 
                 onClick={() => scrollToSection('book')}
-                className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2.5 rounded-xl font-semibold hover:shadow-lg transition-all"
+                className="bg-gradient-to-r from-green-600 to-green-700 text-white px-4 xl:px-6 py-2.5 rounded-xl font-semibold hover:shadow-lg transition-all whitespace-nowrap text-sm xl:text-base"
               >
                 Book Appointment $99
               </button>
@@ -117,7 +117,7 @@ const LegalWeedDocWebsite = () => {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden text-gray-700"
+              className="lg:hidden text-gray-700 ml-2"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -125,7 +125,7 @@ const LegalWeedDocWebsite = () => {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-gray-200">
+            <div className="lg:hidden py-4 border-t border-gray-200">
               <div className="flex flex-col gap-4">
                 <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-green-600 transition-colors text-left">
                   Home
@@ -148,7 +148,7 @@ const LegalWeedDocWebsite = () => {
                 </a>
                 <button 
                   onClick={() => scrollToSection('book')}
-                  className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2.5 rounded-xl font-semibold"
+                  className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2.5 rounded-xl font-semibold text-left"
                 >
                   Book Appointment $99
                 </button>
