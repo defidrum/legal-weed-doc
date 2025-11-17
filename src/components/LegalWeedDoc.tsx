@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin, Calendar, Shield, Clock, CheckCircle, Leaf, Video, FileText, MessageCircle } from 'lucide-react';
 
-const FORM_ENDPOINT = "https://formspree.io/f/mwpnyekj";
+const FORM_ENDPOINT = "https://formspree.io/f/xdkyqqvl";
 
 const LegalWeedDocWebsite = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,7 +61,7 @@ const LegalWeedDocWebsite = () => {
         setErrorMsg(msg);
       }
     } catch (err) {
-      setErrorMsg("Network error. Please check your connection and try again.");
+      setErrorMsg("");
     } finally {
       setSending(false);
     }
@@ -604,7 +604,7 @@ const LegalWeedDocWebsite = () => {
                 <div className="bg-green-50 border border-green-200 rounded-xl p-3 sm:p-4 flex items-start gap-2 sm:gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <p className="text-green-700 font-medium text-sm sm:text-base">
-                    Thank you! We'll contact you within 24 hours to confirm your appointment and arrange payment.
+                    Thank you! We'll contact you within 24 hours to confirm your appointment.
                   </p>
                 </div>
               )}
@@ -664,7 +664,7 @@ const LegalWeedDocWebsite = () => {
                 </p>
                 <p className="flex items-start gap-2">
                   <Mail className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                  <span className="break-all">rbnaksmedical@yahoo.com</span>
+                  <span className="break-all">r.banksmd@banksmedicalclinic.com</span>
                 </p>
               </div>
             </div>
