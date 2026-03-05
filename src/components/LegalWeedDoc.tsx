@@ -664,7 +664,7 @@ const LegalWeedDocWebsite = () => {
                 </p>
                 <p className="flex items-start gap-2">
                   <Mail className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                  <span className="break-all">r.banksmd@banksmedicalclinic.com</span>
+                  <span className="break-all">appointment@legalweeddoc.com</span>
                 </p>
               </div>
             </div>
