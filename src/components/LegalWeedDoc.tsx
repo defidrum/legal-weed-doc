@@ -688,9 +688,8 @@ const LegalWeedDocWebsite = () => {
               </div>
             </div>
           </div>
-
           <div className="border-t border-gray-800 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
-            <p className="mb-2 sm:mb-3">© 2025 LegalWeedDoc.com | Raynando L. Banks, M.D., INC | All Rights Reserved</p>
+            <p className="mb-2 sm:mb-3">© 2026 LegalWeedDoc.com | Raynando L. Banks, M.D., INC | All Rights Reserved</p>
             <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <span>|</span>
